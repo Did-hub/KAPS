@@ -4,6 +4,8 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <title>
     {% if page.title == "Home" %}
       {{ site.title }} &middot; {{ site.tagline }}
@@ -28,7 +30,8 @@
 
   <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ '/atom.xml' | absolute_url }}">
 
-  <link rel="stylesheet" href="{{ '/public/css/mystyle.css' | absolute_url }}">
+  <!-- <link rel="stylesheet" href="{{ '/public/css/mstyle.css' | absolute_url }}"> -->
+  <link rel="stylesheet" href="{{ '/public/css/styler.css' | absolute_url }}"> 
 
   {% if site.google_analytics_id %}
   <script>
@@ -40,4 +43,5 @@
     ga('send', 'pageview');
   </script>
   {% endif %}
+
 </head>

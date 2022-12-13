@@ -5,11 +5,11 @@
 
   <body class="theme-base-0d">
 
-    {% include sidebar.html %}
+    {% include sidebar.html %}    
 
     <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
          content to avoid any CSS collisions with our real content. -->
-    <div class="wrap">
+    <div class="wrap">      
       <div class="masthead">
         <div class="container">
           <h3 class="masthead-title">
@@ -17,8 +17,8 @@
             <small>{{ site.tagline }}</small>
           </h3>
         </div>
-      </div>
-
+      </div>      
+    
       <div class="container content">
         {{ content }}
       </div>
@@ -27,5 +27,25 @@
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
 
     <script src='{{ site.baseurl }}/public/js/script.js'></script>
+
+    <script>
+      /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+      var dropdown = document.getElementsByClassName("dropdown-btn");
+      var i;
+      
+      for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+          } else {
+            dropdownContent.style.display = "block";
+          }
+        });
+      }
+      </script>
+
+    <script src='{{ site.baseurl }}/public/js/myjs.js'></script>
   </body>
 </html>
