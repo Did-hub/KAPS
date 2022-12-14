@@ -12,6 +12,12 @@ title: About
 <br/>
 
 <script>
+  document.write("{{absolute_url}}/public/images/img1.jpg");
+</script>  
+
+<br/>
+
+<script>
   document.write("{{'/public/images/img1.jpg' | relative_url}}");
 </script>
 
