@@ -7,5 +7,6 @@ title: ispage
 <p id="demo">Visit CodeProject!</p>
 </body> 
 
-
 <!-- <button onclick="changeSubStringColor('Visit')">Try it</button> -->
+
+<-- idea input field transform text color-->
