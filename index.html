@@ -3,11 +3,23 @@ layout: default
 title: Home
 ---
 
-<img src="{{ site.url }}public/images/img1.jpg" alt="1">
+<img src="{{'/public/images/img1.jpg' | absolute_url}}" alt="1">
 
 <script>
   document.write("{{ site.url }}public/images/img1.jpg");
-  </script>
+</script>
+
+<script>
+  document.write("{{ site.url }}public/images/img1.jpg");
+</script>
+
+<script>
+  document.write("{{ post.url | absolute_url }}");
+</script>
+
+<script>
+  document.write("{{'/public/images/img1.jpg' | absolute_url}}");
+</script>
 
 <div class="posts">
   {% for post in paginator.posts %}
