@@ -3,12 +3,9 @@ layout: page
 title: ispage
 ---
 
+<body onload = "changeSubStringColor('Visit')">  
 <p id="demo">Visit CodeProject!</p>
+</body> 
 
-<button onclick="changeSubStringColor('Visit')">Try it</button>
 
-<p id="demo" class="message">
-  KAPS automatic page sidebar creation 
-</p>
-
-<button type="button" onclick="myFunction()">Click Me!</button>
+<!-- <button onclick="changeSubStringColor('Visit')">Try it</button> -->

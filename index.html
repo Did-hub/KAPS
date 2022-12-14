@@ -3,26 +3,11 @@ layout: default
 title: Home
 ---
 
-<img src="{{'/public/images/img1.jpg' | absolute_url}}" alt="1">
-
-<script>
-  document.write("{{ site.url }}public/images/img1.jpg");
-</script>
-
-<script>
-  document.write("{{ site.url }}public/images/img1.jpg");
-</script>
-
-<script>
-  document.write("{{ post.url | absolute_url }}");
-</script>
-
-<script>
-  document.write("{{'/public/images/img1.jpg' | absolute_url}}");
-</script>
-
 <div class="posts">
   {% for post in paginator.posts %}
+
+  <div class="full-width parallax"></div>
+
   <div class="post">
     <h1 class="post-title">
       <a href="{{ post.url | absolute_url }}">
