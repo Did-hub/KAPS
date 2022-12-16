@@ -3,6 +3,10 @@ layout: page
 title: ispagealso
 ---
 
+<script>
+  document.write("{{'/public/js/myjs.js' | absolute_url}}");
+</script>
+
 <div class='breakout'>
      <div class="row">
       <div class="column">
