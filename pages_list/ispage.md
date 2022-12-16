@@ -5,21 +5,22 @@ title: ispage
 
 
 
-<!-- <p>Visit Visit CodeProject Visit!</p>
-<script>
-document.body.innerHTML = document.body.innerHTML.replaceAll('Visit', 'Move');
-</script>  -->
 
-<body onload = "changeSubStringColor('Visit')">  
 
-<p id="demo">Visit CodeProject Visit Visit!</p>
 
-<!-- <details id="demo"><summary id="demo">Does work Visit Visit</summary>
+<body onload = "justChange('Visit')">  
+
+<p>Visit CodeProject Visit Visit!</p>
+
+<details><summary>Does work Visit Visit</summary>
 works Visit visit
-<p id="demo">Visit CodeProject!</p>
-</details>  -->
+<p>Visit CodeProject!</p>
+</details> 
 </body>
 
+<!-- <script>
+document.body.innerHTML = document.body.innerHTML.replaceAll('Visit', 'Move');
+</script>  -->
 
 
 <!-- <button onclick="changeSubStringColor('Visit')">Try it</button> -->
