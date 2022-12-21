@@ -4,11 +4,7 @@ title: ispage
 ---
 
 
-
-
-
-
-<body onload = "justChange('Visit')">  
+<!-- <body onload = "justChange('Visit')">   -->
 
 <p>Visit CodeProject Visit Visit!</p>
 
@@ -16,7 +12,13 @@ title: ispage
 works Visit visit
 <p>Visit CodeProject!</p>
 </details> 
-</body>
+<!-- </body> -->
+
+<form action="javascript:justChange(document.getElementById('fname').value)">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <input name="Submit"  type="submit" value="Update"/>
+ </form> 
 
 <!-- <script>
 document.body.innerHTML = document.body.innerHTML.replaceAll('Visit', 'Move');

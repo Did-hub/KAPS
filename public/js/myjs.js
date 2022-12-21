@@ -1,7 +1,7 @@
 function changeSubStringColor(RplArg) {
-    var str = document.getElementById("demo").innerHTML; 
+    var str = document.getElementById("boody").innerHTML; 
     var res = str.replaceAll(RplArg, "<span style='color:red'>" + RplArg + "</span>");
-    document.getElementById("demo").innerHTML = res;
+    document.getElementById("boody").innerHTML = res;
 }  
 
 
